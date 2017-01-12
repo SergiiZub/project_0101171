@@ -478,7 +478,7 @@
       <option name="presentableId" value="Default" />
       <updated>1484135520680</updated>
       <workItem from="1484135522011" duration="22077000" />
-      <workItem from="1484210179680" duration="7379000" />
+      <workItem from="1484210179680" duration="7579000" />
     </task>
     <task id="LOCAL-00001" summary="Change MVC structure, added Auth component, DB component, created users structure">
       <created>1484218165353</created>
@@ -494,11 +494,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484218678861</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change MVC structure, added Auth component, DB component, created users structure">
+      <created>1484219865424</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1484219865424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29456000" />
+    <option name="totallyTimeSpent" value="29656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
