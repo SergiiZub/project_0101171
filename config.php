@@ -15,3 +15,4 @@ define( 'ADMINEMAIL', 'sergiy.tonkoshkuryk@kjointoit.com' );
 date_default_timezone_set('Australia/Sydney');
 
 define('SECRET_KEY', 'qwerty12345');
+define('SITE_URL', $_SERVER['HTTP_HOST']);

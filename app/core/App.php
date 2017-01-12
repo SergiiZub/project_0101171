@@ -37,9 +37,12 @@ class App
     }
 
     public function run() {
-        $user = $this->getComponent('auth')->middleware($this->getComponent('db'));
+        $this->getComponent('auth')->middleware($this->getComponent('db'));
+        $user = $this->getComponent('auth')->getCurrentUser();
 
         $data['content'] = Route::start();
+        $data['user'] = $user;
+//        var_dump($data);die;
 //        $data['menu'] = 'menu';
 //        $data['top'] = $this->view->render('default_tpl/top_menu.php', $data);
         $page = $this->view->render('default_tpl/index.php', $data);

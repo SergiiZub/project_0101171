@@ -10,10 +10,13 @@ class Controller_Client extends Controller
 {
     public function __construct(){
         $this->check_user_role();
+//        $this->model = new Model_Client();
+        $this->view = new View();
     }
 
     public function action_index(){
 
+        return $this->view->render('client/index.php');
     }
 
 }

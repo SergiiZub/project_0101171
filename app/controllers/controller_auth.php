@@ -48,8 +48,8 @@ class Controller_Auth extends Controller
             $password = $_POST['password'];
             $user = App::getInstance()->getComponent('auth')->login($db_component, $login, $password);
         }
-        $data = '';
-        return $this->view->render('/auth/login.php', $data);
-
+//
+//        echo $this->view->render('/auth/login.php');
+//        die();
     }
 }

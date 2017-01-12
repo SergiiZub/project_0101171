@@ -8,22 +8,25 @@
  */
 class Controller_Agency extends Controller
 {
-    public function __construct(){
-        if($this->check_user_role() > 2){
+    public function __construct()
+    {
+        if ($this->check_user_role() > 2) {
             die('Access Deny');
         }
         $this->model = new Model_Agency();
         $this->view = new View();
     }
 
-    public function action_index(){
-
+    public function action_index()
+    {
+        return $this->view->render('/agency/index.php');
     }
 
-    public function action_add_client(){
+    public function action_add_client()
+    {
         $user_id = false;
 
-        if ($_POST){
+        if ($_POST) {
             $db_component = $this->db();
             $first_name = $_POST['first_name'];
             $last_name = $_POST['last_name'];
@@ -33,9 +36,10 @@ class Controller_Agency extends Controller
             $user_id = App::getInstance()->getComponent('auth')->registration($db_component, $first_name, $last_name, $login, $email, $password);
         }
 
-        if ($user_id){
+        if ($user_id) {
 
-        return $this->view->render('/auth/registration.php');
+            return $this->view->render('/auth/registration.php');
+        }
+
     }
-
 }

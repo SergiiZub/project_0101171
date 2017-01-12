@@ -54,6 +54,7 @@ class Route
 		$controller = new $controller_name;
 		$action = $action_name;
 
+//    var_dump($action);exit;
 //    var_dump(get_declared_classes());exit;
 
 		if(method_exists($controller, $action))
